@@ -11,7 +11,7 @@ defmodule Lotus.MixProject do
       elixir: "~> 1.13",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
-      compilers: [:phoenix, :surface] ++ Mix.compilers(),
+      compilers: Mix.compilers() ++ [:phoenix, :surface],
       deps: deps(),
       aliases: aliases()
     ]
