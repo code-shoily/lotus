@@ -8,7 +8,7 @@ defmodule Lotus.MixProject do
       app: :lotus,
       description: "A set of simple Surface components based on UIKit3.",
       version: @version,
-      elixir: "~> 1.12",
+      elixir: "~> 1.13",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       compilers: [:phoenix, :surface] ++ Mix.compilers(),
@@ -45,14 +45,14 @@ defmodule Lotus.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:credo, "~> 1.6.0-rc.0", only: [:dev, :test], runtime: false},
-      {:esbuild, "~> 0.2", only: [:dev, :test]},
+      {:credo, "~> 1.6.0", only: [:dev, :test], runtime: false},
+      {:esbuild, "~> 0.4", only: [:dev, :test]},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
-      {:floki, "~> 0.31.0", only: :test},
-      {:jason, "~> 1.2.0"},
-      {:surface, "~> 0.5.0"},
-      {:surface_formatter, "~> 0.5.0", only: :dev},
-      {:surface_catalogue, "~> 0.1.0", only: :dev}
+      {:floki, "~> 0.32.0", only: :test},
+      {:jason, "~> 1.3"},
+      {:surface, "~> 0.6"},
+      {:surface_formatter, "~> 0.7", only: :dev},
+      {:surface_catalogue, "~> 0.2", only: :dev}
     ]
   end
 end
