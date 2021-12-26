@@ -1,9 +1,9 @@
-use Mix.Config
+import Config
 
 config :phoenix, :json_library, Jason
 
 config :esbuild,
-  version: "0.12.26",
+  version: "0.14.0",
   default: [
     args: ~w(js/app.js --bundle --target=es2016 --outdir=../priv/catalogue/assets),
     cd: Path.expand("../assets", __DIR__),

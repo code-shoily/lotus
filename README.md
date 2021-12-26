@@ -6,13 +6,15 @@ Lotus is a [Surface UI](https://surface-ui.org/) wrapper for [UIKit](https://get
 
 * Install the deps with `mix deps.get`
 * Install the JS libs with `cd assets; yarn`
-* `mix esbuild default` to get the assets in the `catalogue` repository. (Make sure you're in the project directory. Type `cd ..` if you're still inside `assets` from the previous step)
+* Get back to the project directory (i.e. Type `cd ..` if you're still inside `assets` from the previous step)
+* `mix esbuild.install` to install esbuild.
+* `mix esbuild default` to get the assets in the `catalogue` repository.
 * `mix dev` to run the development server for the catalogue
 * Make changes to the components and test the API out in `http://localhost:4001` via examples or playgrounds.
 
 All components are under the `Lotus` section.
 
-This has been tested with Phoenix 1.5.x and Elixir 1.12.x with OTP 24.
+This has been tested with Phoenix 1.6.x and Elixir 1.13.x with OTP 24.
 
 ## Install in Phoenix
 
