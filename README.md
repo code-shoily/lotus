@@ -9,7 +9,7 @@ Lotus is a [Surface UI](https://surface-ui.org/) wrapper for [UIKit](https://get
 * Get back to the project directory (i.e. Type `cd ..` if you're still inside `assets` from the previous step)
 * `mix esbuild.install` to install esbuild.
 * `mix esbuild default` to get the assets in the `catalogue` repository.
-* `mix dev` to run the development server for the catalogue
+* `mix dev` to run the development server for the catalogue (**FIXME** For some reason, it throws an error during the first time, when I type `mix dev` again, it works.)
 * Make changes to the components and test the API out in `http://localhost:4001` via examples or playgrounds.
 
 All components are under the `Lotus` section.
